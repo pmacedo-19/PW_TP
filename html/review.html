@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write Review</title>
+  </head>
+
+  <body>
+    <form action="//submit.form" id="ReportProblem100" method="post" onsubmit="return ValidateForm(this);">
+      <h1>Write a review</h1>
+      <label for="Establishment" style="font-weight: bold">Establishment:</label>
+      <br /><br />
+      <label for="Category" style="font-weight: bold">Category:</label>
+      <br /><br />
+      <label for="Employees" style="font-weight: bold">Overall Rating:</label>
+      <br /><br />
+      Please provide any further information you feel relevant for your evaluation:<br />
+      <textarea name="reviewDesc" rows="7" cols="40" style="width: 100%; max-width: 450px"></textarea>
+      <br /><br />
+      <label for="Employees" style="font-weight: bold">Establishment Rating(s):</label>
+      <br /><br />
+
+      <label for="Employees" style="font-weight: bold">Employee Rating(s):</label>
+      <br /><br />
+      <input name="addEmployee" type="submit" value="+" />
+      <br /><br />
+      <label for="issues">Employee:</label>
+      <select name="issues" id="issues">
+        <option value="issue_1">emp_1</option>
+        <option value="issue_2">emp_2</option>
+        <option value="issue_3">emp_3</option>
+      </select>
+      <br /><br />
+      <input name="skip_Submit" type="submit" value="Submit" />
+    </form>
+
+    <script src="/JS/review.js"></script>
+  </body>
+</html>
