@@ -9,30 +9,31 @@
   </head>
 
   <body>
-    <form action="//submit.form" id="ReportProblem100" method="post" onsubmit="return ValidateForm(this);">
+    <form action="//submit.form" id="NewEstablishment" method="post" onsubmit="return ValidateForm(this);">
       <h1>Add your establishment</h1>
-      <label for="ProblemDescription" style="font-weight: bold">Describe the problem:</label>
-      <br />
-      Please provide as much detail as possible so we can better identify the problem.
-      <br />
+
+      <label for="Description" style="font-weight: bold">Description:</label><br />
       <textarea name="ProblemDescription" rows="7" cols="40" style="width: 100%; max-width: 450px"></textarea>
       <br /><br />
-      <label for="issues">What is the exact error message that you received?:</label>
+      <label for="issues">What best describes the nature of your establishment?:</label>
       <select name="issues" id="issues">
-        <option value="issue_1">issue_1</option>
-        <option value="issue_2">issue_2</option>
-        <option value="issue_3">issue_3</option>
-        <option value="issue_4">issue_4</option>
+        <option value="Other">Other</option>
+        <option value="Restaurant">Restaurant</option>
+        <option value="Pharmacy">Pharmacy</option>
       </select>
       <br /><br />
-      <label for="FromEmailAddress" style="font-weight: bold">Email address:</label><br />
-      <input name="FromEmailAddress" type="email" maxlength="90" style="width: 100%; max-width: 450px" />
+      <label for="estName" style="font-weight: bold">Establishment name:</label><br />
+      <input name="estName" type="text" maxlength="60" style="width: 100%; max-width: 450px" />
       <br /><br />
-      <label for="Name" style="font-weight: bold">Name:</label><br />
-      <input name="Name" type="text" maxlength="60" style="width: 100%; max-width: 450px" />
+      <label for="Address" style="font-weight: bold">Address:</label><br />
+      <input name="Address" type="text" maxlength="43" style="width: 100%; max-width: 450px" />
       <br /><br />
       <label for="PhoneNumber" style="font-weight: bold">Phone number (optional):</label><br />
       <input name="PhoneNumber" type="text" maxlength="43" style="width: 100%; max-width: 450px" />
+      <br /><br />
+      <label for="EmailAddress" style="font-weight: bold">Email address (optional):</label><br />
+      <input name="PhoneNumber" type="text" maxlength="43" style="width: 100%; max-width: 450px" /><br /><br />
+      <input name="addEmployee" type="submit" value="Add employee" />
       <br /><br />
       <input name="skip_Submit" type="submit" value="Submit" />
     </form>
