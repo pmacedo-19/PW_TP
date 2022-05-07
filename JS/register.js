@@ -7,7 +7,6 @@ const passwordErrorMsg = document.getElementById("password-error-msg");
 
 registerButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const email = registerForm.email.value;
     const username = registerForm.username.value;
     const password = registerForm.password.value;
     const password2 = registerForm.password2.value;
