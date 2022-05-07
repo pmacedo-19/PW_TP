@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Establishment</title>
+    <link rel="stylesheet" href="/CSS/newEstablishment.css" />
+  </head>
+
+  <body>
+    <form action="//submit.form" id="ReportProblem100" method="post" onsubmit="return ValidateForm(this);">
+      <h1>Add your establishment</h1>
+      <label for="ProblemDescription" style="font-weight: bold">Describe the problem:</label>
+      <br />
+      Please provide as much detail as possible so we can better identify the problem.
+      <br />
+      <textarea name="ProblemDescription" rows="7" cols="40" style="width: 100%; max-width: 450px"></textarea>
+      <br /><br />
+      <label for="issues">What is the exact error message that you received?:</label>
+      <select name="issues" id="issues">
+        <option value="issue_1">issue_1</option>
+        <option value="issue_2">issue_2</option>
+        <option value="issue_3">issue_3</option>
+        <option value="issue_4">issue_4</option>
+      </select>
+      <br /><br />
+      <label for="FromEmailAddress" style="font-weight: bold">Email address:</label><br />
+      <input name="FromEmailAddress" type="email" maxlength="90" style="width: 100%; max-width: 450px" />
+      <br /><br />
+      <label for="Name" style="font-weight: bold">Name:</label><br />
+      <input name="Name" type="text" maxlength="60" style="width: 100%; max-width: 450px" />
+      <br /><br />
+      <label for="PhoneNumber" style="font-weight: bold">Phone number (optional):</label><br />
+      <input name="PhoneNumber" type="text" maxlength="43" style="width: 100%; max-width: 450px" />
+      <br /><br />
+      <input name="skip_Submit" type="submit" value="Submit" />
+    </form>
+
+    <script src="/JS/newEstablishment.js"></script>
+  </body>
+</html>
