@@ -5,26 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Write Review</title>
+    <link rel="stylesheet" href="/CSS/review.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
   <body>
-    <form action="//submit.form" id="ReportProblem100" method="post" onsubmit="return ValidateForm(this);">
+    <form action="//submit.form" id="writeReview" method="post" onsubmit="return ValidateForm(this);">
       <h1>Write a review</h1>
       <label for="Establishment" style="font-weight: bold">Establishment:</label>
       <br /><br />
       <label for="Category" style="font-weight: bold">Category:</label>
       <br /><br />
-      <label for="Employees" style="font-weight: bold">Overall Rating:</label>
+      <label for="Overall" style="font-weight: bold">Overall Rating:</label>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
       <br /><br />
       Please provide any further information you feel relevant for your evaluation:<br />
       <textarea name="reviewDesc" rows="7" cols="40" style="width: 100%; max-width: 450px"></textarea>
       <br /><br />
-      <label for="Employees" style="font-weight: bold">Establishment Rating(s):</label>
+      <label for="Establishment" style="font-weight: bold">Establishment's Ratings:</label>
       <br /><br />
-
+      <label for="estReviewItem1">Product Quality:</label>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br /><br />
+      <label for="estReviewItem2">Atmosphere:</label>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br /><br />
+      <label for="estReviewItem3">Time efficient:</label>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <br /><br />
+      <input name="suggestNewEstItem" type="submit" value="Suggest new reviewable item" />
+      <br /><br />
       <label for="Employees" style="font-weight: bold">Employee Rating(s):</label>
-      <br /><br />
-      <input name="addEmployee" type="submit" value="+" />
       <br /><br />
       <label for="issues">Employee:</label>
       <select name="issues" id="issues">
@@ -32,6 +59,22 @@
         <option value="issue_2">emp_2</option>
         <option value="issue_3">emp_3</option>
       </select>
+      <br /><br />
+      <label for="empReviewitem1">Attentiveness:</label>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br /><br />
+      <label for="empReviewitem2">Manners:</label>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br /><br />
+      <input name="addEmployee" type="submit" value="Add employee to review" />
       <br /><br />
       <input name="skip_Submit" type="submit" value="Submit" />
     </form>
