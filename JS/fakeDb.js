@@ -16,10 +16,10 @@ let cl1 = {
 };
 let cl2 = {
   username: "wardian",
-  email: "",
-  pwd: "",
-  name: "",
-  dateOfBirth: "",
+  email: "a15525@alunos.ipca.pt",
+  pwd: "asd12354",
+  name: "Pedro Macedo",
+  dateOfBirth: "25/09/1999",
   gender: "M",
   userType: "admin",
   activeSubscription: true,
@@ -74,3 +74,5 @@ let cat2 = {
   estRatItems: ["Stock", "Waiting line"],
   empRatItems: ["Product knowledge", "Usefulness"],
 };
+
+module.exports = clients;
